@@ -27,10 +27,6 @@ print(paste("La Varianza para este dato de cuanto pagarons seria de: ", var(DfLu
 print(paste("La Varianza para este dato de cuanto pagarons seria de: ", diff(range((DfLuzR$LuzPesos)))))
 
 
-table(DfLuzR$LuzPesos)
-
-#Cuartiles 
-
 cuartiles <- quantile(DfLuzR$LuzPesos)
 for (i in 2:4){
   mensaje <- paste("Cuartil", i-1 , names(cuartiles)[i], "es", cuartiles[i])
