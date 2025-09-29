@@ -1,7 +1,7 @@
 # importar datos de csv
 file.choose()
 #se guarda en un data frame el archivo csv
-DfLuzR=read.csv("C:\\Users\\dalej\\Documents\\estadistica y probabilidad descriptiva\\encuesta_luz_abril.csv")
+DfLuzR=read.csv("C:\\Users\\dalej\\Documents\\ProyectosR\\ReciboLuz\\encuesta_luz_abril.csv")
 #Aqui podemos ver el archivo en una tabla de R 
 View(DfLuzR)
 #Aqui conocemos cuales son las variables(el nombre de las columnas)
@@ -25,6 +25,9 @@ print(paste("La Varianza para este dato de cuanto pagarons seria de: ", var(DfLu
 
 #Desviacion Estandar
 print(paste("La Varianza para este dato de cuanto pagarons seria de: ", diff(range((DfLuzR$LuzPesos)))))
+
+
+table(DfLuzR$LuzPesos)
 
 #Cuartiles 
 
